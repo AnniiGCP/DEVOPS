@@ -20,10 +20,26 @@ Implement Continuous Integration (CI) in Azure DevOps by building a Maven projec
 
 ---
 
-## ⚙️ Step 1: Create a Project in Azure DevOps
+## ⚙️ Step 1: Open Azure Portal
 
-- Open: https://dev.azure.com  
-- Create project: **Annii-App-Devops**
+- Open your browser  
+- Go to: https://portal.azure.com  
+- Sign in with your Microsoft account
+
+---
+
+## ⚙️ Open Microsoft Cloud Menu
+
+- Click the top-left menu (**Microsoft Cloud menu**)  
+- Select **DevOps**  
+- You will be redirected to the Azure DevOps portal
+
+---
+
+## ⚙️ Select Organization and Create Project
+
+- Click your Azure DevOps organization  
+- Create a new project: **Annii-App-Devops**
 
 ---
 
