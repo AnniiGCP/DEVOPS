@@ -159,18 +159,22 @@ YAML:
 
 ```yaml
 trigger:
-- main
+  - master
 
 pool:
-    name: Default
+  vmImage: ubuntu-latest
 
 steps:
-- task: Maven@3
+  - task: Maven@3
     inputs:
-        mavenPomFile: 'pom.xml'
-        goals: 'clean package'
-        publishJUnitResults: true
-        testResultsFiles: '**/surefire-reports/TEST-*.xml'
+      mavenPomFile: 'myapp/pom.xml'   # ✅ FIXED PATH
+      mavenOptions: '-Xmx3072m'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.11'
+      jdkArchitectureOption: 'x64'
+      publishJUnitResults: true
+      testResultsFiles: '**/surefire-reports/TEST-*.xml'
+      goals: 'package'
 ```
 
 ---
