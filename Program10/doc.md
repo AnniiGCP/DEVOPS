@@ -167,7 +167,7 @@ pool:
 steps:
   - task: Maven@3
     inputs:
-      mavenPomFile: 'myapp/pom.xml'   # ✅ FIXED PATH
+      mavenPomFile: 'myapp/pom.xml'   
       mavenOptions: '-Xmx3072m'
       javaHomeOption: 'JDKVersion'
       jdkVersionOption: '1.11'
