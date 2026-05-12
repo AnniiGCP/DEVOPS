@@ -134,6 +134,7 @@ Open `build.gradle` and use:
 ```groovy
 plugins {
     id 'java'
+    id 'application'
 }
 
 group = 'com.example'
@@ -144,12 +145,11 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13.2'
 }
 
-task run(type: JavaExec) {
-    main = 'com.example.App'
-    classpath = sourceSets.main.runtimeClasspath
+application {
+    mainClass = 'com.example.App'
 }
 ```
 
