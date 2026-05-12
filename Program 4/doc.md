@@ -106,7 +106,7 @@ mvn clean install
 Run the application:
 
 ```bash
-mvn exec:java -Dexec.mainClass="com.example.App"
+mvn exec:java "-Dexec.mainClass=com.example.App"
 ```
 
 ---
